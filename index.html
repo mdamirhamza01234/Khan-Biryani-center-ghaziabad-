@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17110f">
+  <meta name="description" content="Khan Biryani Centre — biryani, Mughlai favourites, kebabs and more. Order online or reserve your table.">
+  <title>Khan Biryani Centre | Biryani & Mughlai Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="topline"><span>Freshly prepared · Full of flavour</span><span>Free home delivery up to 3 km on orders above ₹300</span></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Khan Biryani Centre home">
+      <span class="brand-mark">K<span>✦</span></span>
+      <span><strong>KHAN BIRYANI</strong><small>CENTRE · MUGHLAl KITCHEN</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a href="#visit">Find Us</a>
+      <button class="nav-reserve" id="navReserve">Reserve a Table</button>
+    </nav>
+    <button class="cart-button" id="cartOpen" aria-label="Open cart">🛍 <span>Cart</span><b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><i></i> THE TASTE OF MUGHLAl TRADITION</div>
+        <h1>Good food.<br><em>Great gatherings.</em></h1>
+        <p>Fragrant biryani, slow-cooked classics and irresistible kebabs — made to bring everyone to the table.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#menu">Explore Menu <span>↗</span></a><button class="btn btn-outline" id="heroReserve">Reserve a Table</button></div>
+        <div class="hero-notes"><span>✦ Made fresh to order</span><span>✦ Dine-in & takeaway</span></div>
+      </div>
+      <div class="hero-badge"><strong>3 km</strong><span>FREE DELIVERY</span><small>Minimum order ₹300</small></div>
+      <div class="hero-bottom">KHAN BIRYANI CENTRE <span>—</span> INDIRAPURAM</div>
+    </section>
+
+    <section class="quick-strip">
+      <div><span class="quick-icon">✦</span><p><b>Rich, familiar flavours</b><small>Mughlai favourites</small></p></div>
+      <div><span class="quick-icon">♨</span><p><b>Prepared fresh</b><small>Made when you order</small></p></div>
+      <div><span class="quick-icon">⌂</span><p><b>Easy delivery</b><small>Up to 3 km · Min ₹300</small></p></div>
+      <div><span class="quick-icon">◷</span><p><b>Plan your visit</b><small>Reserve your table</small></p></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div><div class="eyebrow dark"><i></i> FROM OUR KITCHEN</div><h2>Explore the <em>menu</em></h2><p>Find your favourites, choose a portion and add them to your order.</p></div>
+        <label class="search"><span>⌕</span><input id="menuSearch" type="search" placeholder="Search dishes..."></label>
+      </div>
+      <div class="category-row" id="categoryRow">
+        <button class="cat active" data-category="all">All items</button>
+        <button class="cat" data-category="Rice">Biryani & Rice</button>
+        <button class="cat" data-category="Main Course">Main course</button>
+        <button class="cat" data-category="Starters">Starters</button>
+        <button class="cat" data-category="Breads">Breads</button>
+        <button class="cat" data-category="Sweet & Beverages">Sweet & beverages</button>
+      </div>
+      <div id="menuGroups"></div>
+      <p class="menu-footnote">Prices are shown in INR. Menu and availability may change; please confirm with the restaurant when ordering.</p>
+    </section>
+
+    <section class="feature">
+      <div class="feature-image"></div>
+      <div class="feature-copy"><div class="eyebrow"><i></i> A TABLE WORTH SHARING</div><h2>Make room for<br><em>one more bite.</em></h2><p>From a comforting bowl of biryani to a table full of kebabs and curries, there is something for every craving.</p><button class="btn btn-gold" id="featureReserve">Book your table <span>↗</span></button></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-card"><div class="eyebrow dark"><i></i> KHAN BIRYANI CENTRE</div><h2>Flavours that bring<br><em>people together.</em></h2><p>Discover biryani, Mughlai main courses, starters and freshly served breads at Khan Biryani Centre. Enjoy your meal at the restaurant, collect a takeaway or arrange delivery in the nearby area.</p><div class="about-points"><span>✦ Biryani & rice</span><span>✦ Mughlai classics</span><span>✦ Kebabs & starters</span></div></div>
+      <div class="about-photo"></div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div><div class="eyebrow"><i></i> COME ON IN</div><h2>Good things are<br><em>better shared.</em></h2><p>Visit us at Shipra Riviera, Indirapuram, Ghaziabad.</p><div class="visit-actions"><a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Khan+Biryani+Centre+Shipra+Riviera+Indirapuram">Get directions ↗</a><a class="btn btn-outline" href="tel:+918750962292">Call restaurant</a></div></div>
+      <div class="visit-info"><div><small>FIND US</small><b>SRD-306, Shipra Riviera,<br>Gyan Khand III, Indirapuram,<br>Ghaziabad, Uttar Pradesh 201014</b></div><div><small>CALL US</small><b>+91 87509 62292</b></div><div><small>DELIVERY</small><b>Free up to 3 km · Minimum order ₹300</b></div><div><small>HOURS</small><b>Daily · 7:00 AM – 10:00 PM</b></div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">K<span>✦</span></span><span><strong>KHAN BIRYANI</strong><small>CENTRE · MUGHLAl KITCHEN</small></span></a><p>Good food. Great gatherings.</p><small>© <span id="year"></span> Khan Biryani Centre. Demo website — confirm details with the restaurant.</small></footer>
+
+  <div class="overlay" id="reserveOverlay" aria-hidden="true">
+    <section class="modal reserve-modal" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
+      <button class="close" data-close="reserveOverlay" aria-label="Close">×</button>
+      <div class="modal-kicker">YOUR TABLE IS WAITING</div><h2 id="reserveTitle">Reserve a <em>table</em></h2><p class="modal-intro">Choose your date, party size and preferred time.</p>
+      <form id="reserveForm">
+        <div class="field-grid"><label>Guests<select id="partySize"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>12</option><option>15</option><option>20</option></select></label><label>Date<input type="date" id="reserveDate" required></label></div>
+        <label class="field-label">Choose a time</label><div class="time-grid" id="timeGrid"></div><input type="hidden" id="selectedTime" value="7:00 PM">
+        <label>Your name<input id="guestName" type="text" placeholder="Enter your name" required></label><label>Mobile number<input id="guestPhone" type="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number" required></label>
+        <label>Special request <textarea id="guestNote" rows="2" placeholder="Optional"></textarea></label>
+        <button class="btn btn-gold submit-btn" type="submit">Continue reservation <span>→</span></button>
+        <small class="form-note">Your request will open WhatsApp to confirm the booking. A reservation is not confirmed until the restaurant replies.</small>
+      </form>
+    </section>
+  </div>
+
+  <div class="overlay" id="cartOverlay" aria-hidden="true">
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="cart-head"><div><div class="modal-kicker">YOUR SELECTION</div><h2 id="cartTitle">Your <em>cart</em></h2></div><button class="close" data-close="cartOverlay">×</button></div><div id="cartItems" class="cart-items"><div class="empty-cart">Your cart is waiting for something delicious.</div></div><div class="cart-bottom"><div class="cart-total"><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><small>Delivery charges, if any, will be confirmed by the restaurant.</small><button class="btn btn-gold submit-btn" id="checkoutBtn">Order on WhatsApp <span>→</span></button><button class="clear-cart" id="clearCart">Clear cart</button></div></aside>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
