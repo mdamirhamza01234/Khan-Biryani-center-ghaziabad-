@@ -1,33 +1,33 @@
 const dishes = [
- {category:"Rice",name:"Diet Biryani",prices:{Half:180,Full:350}},
- {category:"Rice",name:"Veg Biryani",prices:{Quarter:50,Half:90,Full:160}},
- {category:"Rice",name:"Chicken Biryani",prices:{Quarter:60,Half:120,Full:240}},
- {category:"Rice",name:"Mutton Biryani",prices:{Quarter:150,Half:280,Full:510}},
- {category:"Main Course",name:"Chicken Korma",prices:{Quarter:120,Half:240,Full:450}},
- {category:"Main Course",name:"Chicken Changezi",prices:{Quarter:150,Half:290,Full:580}},
- {category:"Main Course",name:"Mutton Korma",prices:{Quarter:210,Half:420,Full:800}},
- {category:"Main Course",name:"Chicken Nihari",prices:{Quarter:140,Half:260,Full:500}},
- {category:"Main Course",name:"Mutton Nihari",prices:{Quarter:220,Half:410,Full:820}},
- {category:"Main Course",name:"Egg Curry (2 pcs)",prices:{Quarter:120}},
- {category:"Main Course",name:"Mutton Stew",prices:{Quarter:240,Half:460,Full:910}},
- {category:"Main Course",name:"Kaju Keema",prices:{Quarter:180,Half:340,Full:650}},
- {category:"Starters",name:"Chicken Tandoori",prices:{Quarter:140,Half:260,Full:500}},
- {category:"Starters",name:"Chicken Lollipop",prices:{"4 pcs":140,"8 pcs":270,"15 pcs":500}},
- {category:"Starters",name:"Chicken Popcorn",prices:{Quarter:120,Half:220,Full:460}},
- {category:"Starters",name:"Chicken Fry",prices:{Quarter:110,Half:220,Full:430}},
- {category:"Starters",name:"Chicken Kebab",prices:{"2 pcs":130,"4 pcs":250,"8 pcs":480}},
- {category:"Starters",name:"Mutton Kebab",prices:{"2 pcs":180,"4 pcs":350,"7 pcs":680}},
- {category:"Starters",name:"Chicken Tikka Spicy",prices:{Quarter:160,Half:300,Full:580}},
- {category:"Starters",name:"Chicken Malai Tikka",prices:{Quarter:200,Half:380,Full:750}},
- {category:"Starters",name:"Fish Fry",prices:{Quarter:150,Half:330,Full:650}},
- {category:"Breads",name:"Roomali Roti",prices:{Piece:10}},
- {category:"Breads",name:"Khameeri Roti",prices:{Piece:15}},
- {category:"Sweet & Beverages",name:"Thandi Kheer",prices:{Bowl:50}},
- {category:"Sweet & Beverages",name:"Coke / Sprite / Limca / Fanta / Thums Up (250 ml)",prices:{Bottle:20}},
- {category:"Sweet & Beverages",name:"Coke / Sprite / Limca / Fanta / Thums Up (750 ml)",prices:{Bottle:40}},
- {category:"Sweet & Beverages",name:"Minute Maid (250 ml)",prices:{Bottle:20}},
- {category:"Sweet & Beverages",name:"Maaza Refresh (135 ml)",prices:{Bottle:10}},
- {category:"Sweet & Beverages",name:"Kinley Water (1 L)",prices:{Bottle:20}}
+ {category:"Rice",name:"Diet Biryani",img:"https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?auto=format&fit=crop&w=700&q=80",prices:{Half:180,Full:350}},
+ {category:"Rice",name:"Veg Biryani",img:"https://images.unsplash.com/photo-1684409642850-b48e5ab8e67c?auto=format&fit=crop&w=700&q=80",prices:{Quarter:50,Half:90,Full:160}},
+ {category:"Rice",name:"Chicken Biryani",img:"https://images.unsplash.com/photo-1782541370275-6761522e39d1?auto=format&fit=crop&w=700&q=80",prices:{Quarter:60,Half:120,Full:240}},
+ {category:"Rice",name:"Mutton Biryani",img:"https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=700&q=80",prices:{Quarter:150,Half:280,Full:510}},
+ {category:"Main Course",name:"Chicken Korma",img:"https://images.unsplash.com/photo-1764304733301-3a9f335f0c67?auto=format&fit=crop&w=700&q=80",prices:{Quarter:120,Half:240,Full:450}},
+ {category:"Main Course",name:"Chicken Changezi",img:"https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?auto=format&fit=crop&w=700&q=80",prices:{Quarter:150,Half:290,Full:580}},
+ {category:"Main Course",name:"Mutton Korma",img:"https://images.unsplash.com/photo-1769681375998-1b231dcbe363?auto=format&fit=crop&w=700&q=80",prices:{Quarter:210,Half:420,Full:800}},
+ {category:"Main Course",name:"Chicken Nihari",img:"https://images.unsplash.com/photo-1708782340380-536df8cf6784?auto=format&fit=crop&w=700&q=80",prices:{Quarter:140,Half:260,Full:500}},
+ {category:"Main Course",name:"Mutton Nihari",img:"https://images.unsplash.com/photo-1764314108477-f026172e32a9?auto=format&fit=crop&w=700&q=80",prices:{Quarter:220,Half:410,Full:820}},
+ {category:"Main Course",name:"Egg Curry (2 pcs)",img:"https://images.unsplash.com/photo-1681546897975-592f87121960?auto=format&fit=crop&w=700&q=80",prices:{Quarter:120}},
+ {category:"Main Course",name:"Mutton Stew",img:"https://images.unsplash.com/photo-1642821372719-46b426afd8b1?auto=format&fit=crop&w=700&q=80",prices:{Quarter:240,Half:460,Full:910}},
+ {category:"Main Course",name:"Kaju Keema",img:"https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=700&q=80",prices:{Quarter:180,Half:340,Full:650}},
+ {category:"Starters",name:"Chicken Tandoori",img:"https://images.unsplash.com/photo-1617692855027-33b14f061079?auto=format&fit=crop&w=700&q=80",prices:{Quarter:140,Half:260,Full:500}},
+ {category:"Starters",name:"Chicken Lollipop",img:"https://images.unsplash.com/photo-1766589220977-143f5cba3f22?auto=format&fit=crop&w=700&q=80",prices:{"4 pcs":140,"8 pcs":270,"15 pcs":500}},
+ {category:"Starters",name:"Chicken Popcorn",img:"https://images.unsplash.com/photo-1767469576675-0c02a8d66f4c?auto=format&fit=crop&w=700&q=80",prices:{Quarter:120,Half:220,Full:460}},
+ {category:"Starters",name:"Chicken Fry",img:"https://images.unsplash.com/photo-1566918214014-a3b3e0132267?auto=format&fit=crop&w=700&q=80",prices:{Quarter:110,Half:220,Full:430}},
+ {category:"Starters",name:"Chicken Kebab",img:"https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=700&q=80",prices:{"2 pcs":130,"4 pcs":250,"8 pcs":480}},
+ {category:"Starters",name:"Mutton Kebab",img:"https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=700&q=80",prices:{"2 pcs":180,"4 pcs":350,"7 pcs":680}},
+ {category:"Starters",name:"Chicken Tikka Spicy",img:"https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80",prices:{Quarter:160,Half:300,Full:580}},
+ {category:"Starters",name:"Chicken Malai Tikka",img:"https://images.unsplash.com/photo-1781332151269-adfdc2a1c3c2?auto=format&fit=crop&w=700&q=80",prices:{Quarter:200,Half:380,Full:750}},
+ {category:"Starters",name:"Fish Fry",img:"https://images.unsplash.com/photo-1665401015549-712c0dc5ef85?auto=format&fit=crop&w=700&q=80",prices:{Quarter:150,Half:330,Full:650}},
+ {category:"Breads",name:"Roomali Roti",img:"https://images.unsplash.com/photo-1718874560784-d4164371eb38?auto=format&fit=crop&w=700&q=80",prices:{Piece:10}},
+ {category:"Breads",name:"Khameeri Roti",img:"https://images.unsplash.com/photo-1600935926387-12d9b03066f0?auto=format&fit=crop&w=700&q=80",prices:{Piece:15}},
+ {category:"Sweet & Beverages",name:"Thandi Kheer",img:"https://images.unsplash.com/photo-1777613112969-d7511ddfbe15?auto=format&fit=crop&w=700&q=80",prices:{Bowl:50}},
+ {category:"Sweet & Beverages",name:"Coke / Sprite / Limca / Fanta / Thums Up (250 ml)",img:"https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?auto=format&fit=crop&w=700&q=80",prices:{Bottle:20}},
+ {category:"Sweet & Beverages",name:"Coke / Sprite / Limca / Fanta / Thums Up (750 ml)",img:"https://images.unsplash.com/photo-1594971475674-6a97f8fe8c2b?auto=format&fit=crop&w=700&q=80",prices:{Bottle:40}},
+ {category:"Sweet & Beverages",name:"Minute Maid (250 ml)",img:"https://images.unsplash.com/photo-1640213505284-21352ee0d76b?auto=format&fit=crop&w=700&q=80",prices:{Bottle:20}},
+ {category:"Sweet & Beverages",name:"Maaza Refresh (135 ml)",img:"https://images.unsplash.com/photo-1579630942078-100a2f8e9052?auto=format&fit=crop&w=700&q=80",prices:{Bottle:10}},
+ {category:"Sweet & Beverages",name:"Kinley Water (1 L)",img:"https://images.unsplash.com/photo-1561041695-d2fadf9f318c?auto=format&fit=crop&w=700&q=80",prices:{Bottle:20}}
 ];
 const groups=["Rice","Main Course","Starters","Breads","Sweet & Beverages"];
 let activeCategory="all", cart=[];
@@ -45,7 +45,7 @@ function renderMenu(){
   list.forEach(d=>{
    const first=Object.entries(d.prices)[0];
    const card=document.createElement("article");card.className="dish";
-   card.innerHTML=`<div><h4>${d.name}</h4><p>${Object.keys(d.prices).join(" · ")}</p></div><div style="display:flex;align-items:center;gap:10px"><div class="dish-price">From ${money(first[1])}<small>${first[0]}</small></div><button class="add-btn" aria-label="Add ${d.name}">+</button></div>`;
+   card.innerHTML=`<img class="dish-img" src="${d.img}" alt="${d.name}" loading="lazy" onerror="this.onerror=null;this.src='assets/hero-poster.jpg'"><div class="dish-info"><h4>${d.name}</h4><p>${Object.keys(d.prices).join(" · ")}</p></div><div class="dish-foot"><div class="dish-price">From ${money(first[1])}<small>${first[0]}</small></div><button class="add-btn" aria-label="Add ${d.name}">+</button></div>`;
    card.querySelector("button").addEventListener("click",()=>addDish(d));grid.appendChild(card);
   });
   root.appendChild(section);

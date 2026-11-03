@@ -13,3 +13,14 @@
 .hero-badge small{display:none}
 .hero-bottom{left:7%;bottom:26px}
 }
+
+/* dish cards with photos */
+.menu-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+.dish{flex-direction:column;align-items:stretch;justify-content:flex-start;padding:0;gap:0;overflow:hidden;border-radius:10px}
+.dish-img{width:100%;height:160px;object-fit:cover;display:block;background:#efe6d8}
+.dish-info{padding:13px 15px 6px;flex:1}
+.dish h4{font-size:14px;line-height:1.35;margin:0 0 5px}
+.dish p{font-size:11px}
+.dish-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 15px 14px}
+@media(max-width:900px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.menu-grid{grid-template-columns:repeat(2,1fr);gap:11px}.dish-img{height:110px}.dish-info{padding:10px 11px 4px}.dish h4{font-size:12.5px}.dish p{font-size:9.5px}.dish-foot{padding:6px 11px 11px;gap:6px}.dish-price{font-size:11px}.add-btn{width:30px;height:30px}}
