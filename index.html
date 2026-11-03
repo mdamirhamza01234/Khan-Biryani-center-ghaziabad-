@@ -28,6 +28,7 @@
 
   <main>
     <section class="hero" id="home">
+      <video class="herovideo" autoplay muted loop playsinline preload="auto" aria-hidden="true" poster="assets/hero-poster.jpg"><source src="assets/hero.webm" type="video/webm"><source src="assets/hero.mp4" type="video/mp4"></video>
       <div class="hero-shade"></div>
       <div class="hero-content">
         <div class="eyebrow"><i></i> THE TASTE OF MUGHLAl TRADITION</div>
@@ -102,5 +103,12 @@
   </div>
   <div class="toast" id="toast"></div>
   <script src="assets/script.js"></script>
+<script>
+(function(){var v=document.querySelector('.herovideo');if(!v)return;v.muted=true;
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.pause();v.removeAttribute('autoplay');return}
+var p=v.play();if(p&&p.catch)p.catch(function(){});
+document.addEventListener('visibilitychange',function(){if(document.hidden){v.pause()}else{var q=v.play();if(q&&q.catch)q.catch(function(){})}});
+})();
+</script>
 </body>
 </html>
